@@ -1,0 +1,3956 @@
+@charset "UTF-8";
+
+html, body{
+	margin: 0;
+	padding: 0;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+	position: absolute;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	background: #D8E5EE;
+}
+
+/* hide scrollbar but allow scrolling */
+body::-webkit-scrollbar, #iPhscrollDiv::-webkit-scrollbar, #iPhcontent::-webkit-scrollbar, .iPhfixed::-webkit-scrollbar, #scrollDiv::-webkit-scrollbar, #bfix::-webkit-scrollbar, #inScroll::-webkit-scrollbar, #content::-webkit-scrollbar{
+  	-ms-overflow-style: none; /* for Internet Explorer, Edge */
+  	scrollbar-width: none; /* for Firefox */
+  	overflow-y: scroll; 
+  	display: none; /* for Chrome, Safari, and Opera */
+}
+
+body::-webkit-scrollbar, #scrollDIVEmail::-webkit-scrollbar, #contentEmail::-webkit-scrollbar, #scrollDIV::-webkit-scrollbar, .fixediPad::-webkit-scrollbar, #scrollDIViPad::-webkit-scrollbar, #iPhscrollDiv::-webkit-scrollbar, #content::-webkit-scrollbar, #scrollDiv::-webkit-scrollbar, #bfix::-webkit-scrollbar, #inScroll::-webkit-scrollbar, #resultsFix::-webkit-scrollbar{
+	-ms-overflow-style: none; /* for Internet Explorer, Edge */
+	scrollbar-width: none; /* for Firefox */
+	overflow-y: scroll; 
+	display: none; /* for Chrome, Safari, and Opera */
+}
+
+h1, h2, h3, h4, p{
+	color: #05004d;
+}
+
+h1, h2, h3, h4{
+	text-align: center;
+}
+
+h1{
+	font-size: 1.8em;
+	line-height: 1.5em;
+	padding: 0 25px;
+	letter-spacing: 3px;
+}
+
+h2{
+	font-size: 2.1em;
+	line-height: 1.1em;
+	padding: 0 25px;
+	letter-spacing: 3px;
+}
+
+h3{
+	font-size: 2em;
+	line-height: 1em;
+	padding: 0 25px;
+	letter-spacing: 3.5px;
+}
+
+h4{
+	font-size: 1.3em;
+	line-height: 1.5em;
+	padding: 0 15px;
+	font-weight: 600;
+	letter-spacing: 1.3px;
+}
+
+p{
+	font-size: 1em;
+	line-height: 1.7em;
+	font-weight: 500;
+	text-align: left;
+	padding: 5px 25px;
+	letter-spacing: 1.6px;
+}
+
+/* Nav styling start */
+.navHeader{
+	position: fixed;
+	width: 100%;
+	height: 5vh;
+	top: 0;
+	background: rgba( 255, 255, 255, 0.01);
+	backdrop-filter: blur(20px);
+	-webkit-backdrop-filter: blur(20px);
+	z-index: 9999 !important;
+	-webkit-box-shadow: -1px 11px 5px -3px rgba(5,0,77,0.37);
+	-moz-box-shadow: -1px 11px 5px -3px rgba(5,0,77,0.37);
+	box-shadow: -1px 11px 5px -3px rgba(5,0,77,0.37);
+	z-index: 9;
+}
+
+.NavThird1, .NavThird2, .NavThird3{
+	position: relative;
+	width: 33.33%;
+	height: 5vh;
+	top: 0;
+	left: 0;
+	float: left;
+}
+
+.headBtn{
+	width: 33.33%;
+	height: 100%;
+	align-content: center;
+	float: left;
+}
+
+.headBtnInner{
+	position: relative;
+  	top: 1.5px;
+  	left: 18%;
+  	width: 50%;
+  	height: 40px;
+  	align-content: center;
+  	border: #05004d solid 3px;
+  	border-radius: 25px;
+	font-size: .75em;
+	line-height: 3.5em;
+	text-align: center;
+	margin: 0 2px;
+	font-weight: 900;
+	letter-spacing: 1.2px;
+	color: #05004d;
+}
+
+.headBtnInner:hover{
+	border: #6364ff solid 3px;
+	color: #6364ff;
+	background: #fff;
+}
+
+.headBtnInner:hover, .headBtnInner:hover a{
+	color: #6364ff !important;
+	background: #fff;
+}
+/* Nav styling end */
+
+/* Sydney setup start */
+.SydSec{
+	position: fixed;
+	width: 100%;
+	height: 80vh;
+	bottom: 2vh;
+	background: transparent;
+	z-index: -1;
+}
+
+.Hbridge, .OH, .Back1, .Back2, .Back4, .Back5, .Back6, .Center1, .Front1, .Front2, .Front3, .Front4, .centrepoint, .Center2, .Center3{
+	position: fixed;
+	bottom: 3vh;
+	z-index: -1;
+	height: 55vh;
+}
+
+.Hbridge{
+	right: 6vw;
+	width: 30%;
+}
+
+.OH{
+	right: 2vw;
+	width: 30%;
+}
+
+.Back1{
+	right: 38vw;
+	width: 5%;
+}
+
+.Back2{
+	right: 43vw;
+	width: 7%;
+}
+
+.Back3{
+	position: fixed;
+	bottom: 3vh;
+	z-index: -1;
+	right: 50vw;
+	width: 7%;
+	height: 35vh;
+}
+
+.Back4{
+	right: 58vw;
+	width: 7%;
+}
+
+.Back5{
+	right: 68vw;
+	width: 7%;
+}
+
+.Back6{
+	right: 85.1vw;
+	width: 5%;
+}
+
+.Center1{
+	right: 39vw;
+	width: 13%;
+}
+
+.Front1{
+	right: 33vw;
+	width: 6%;
+}
+
+.Front2{
+	right: 40.5vw;
+	width: 5%;
+}
+
+.Front3{
+	right: 46.7vw;
+	width: 5%;
+}
+
+.Front4{
+	right: 53.7vw;
+	width: 6%;
+}
+
+.centrepoint{
+	right: 64vw;
+	width: 7%;
+}
+
+.Center2{
+	right: 73.9vw;
+	width: 12.1%;
+}
+
+.Center3{
+	right: 89vw;
+	width: 11%;
+}
+
+/* scrim */
+.SphTop{
+	position: fixed;
+	bottom: 4vh;
+	left: 0;
+	width: 100%;
+	height: 95vh;
+	background-color: #D8E5EE;
+	opacity: .94;
+	z-index: -1;
+}
+/* Sydney setup end */
+
+.vidStyle{
+	border-radius: 20px !important;
+}
+
+.textLink:hover a{
+	background: #fff !important;
+	color: #05004d !important;
+}
+
+/* qual slider DESKTOP start */
+.qualConCard{
+	position: relative;
+    top: 0;
+    left: 11.5%;
+    width: 73%;
+    height: 192px;
+}
+
+.qualCon20percent, .qualCon60percent{
+	position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.qualCon20percent{
+    height: 20%;
+}
+
+.qualCon60percent{
+    height: 60%;
+}
+
+.qualSlider{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 193px;
+	border: #570060 3px solid;
+	border-radius: 10px;
+    z-index: 3;
+	background: #FFECDF;
+}
+
+.qualWrapper{
+    overflow: hidden;
+    position: relative;
+    background: transparent;
+    z-index: 1;
+}
+
+#qualItems{
+    width: 10000px;
+    position: relative;
+    top: 0;
+    left: -450px;
+}
+
+#qualItems.shifting{
+   transition: left .2s ease-out;
+}
+
+.qualSlide{
+    width: 450px;
+    height: 100%;
+    top: 0;
+    cursor: pointer;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: all 1s;
+    position: relative;
+}
+
+.qualControl{
+    position: absolute;
+    top: 48%;
+    width: 5px;
+    height: 5px;
+    border: 3px #570060 solid;
+    border-radius: 20px;
+    z-index: 2;
+}
+
+.qualControl:hover {
+    background: #570060;
+    width: 5px;
+    height: 5px;
+    border-radius: 24px;
+    border: 3px #570060 solid;
+    z-index: 2;
+}
+
+.qualPrev, .qualNext{
+    background-size: 22px;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.qualPrev{
+    left: 10px;
+}
+
+.qualNext {
+    right: 10px;
+}
+
+.qualPrev:active, .qualNext:active{
+    transform: scale (0.9);
+}
+/* qual slider DESKTOP end */
+
+/* qual slider equitise start */
+.qualSliderequitise{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 550px;
+	border: #570060 3px solid;
+	border-radius: 10px;
+    z-index: 3;
+	background: #FFECDF;
+}
+
+.qualWrapperequitise{
+	height: 100%;
+    overflow: hidden;
+    position: relative;
+    background: #e7ff21;
+    z-index: 1;
+}
+
+#qualItemsequitise{
+    width: 10000px;
+	height: 100%;
+    position: relative;
+    top: 0;
+    left: -550px;
+	background: #93278f;
+}
+
+#qualItemsequitise.shifting{
+   transition: left .2s ease-out;
+}
+
+.qualSlideequitise{
+    width: 550px;
+    height: 100%;
+    top: 0;
+	left: 10px;/* change left position to keep it cecntered across mobile */
+    cursor: pointer;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: all 1s;
+    position: relative;
+	background: #619327;
+}
+
+.qualConCardequitise{
+	position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.qualControlequitise{
+    position: absolute;
+    top: 48%;
+    width: 5px;
+    height: 5px;
+    border: 3px #570060 solid;
+    border-radius: 20px;
+    z-index: 2;
+}
+
+.qualControlequitise:hover {
+    background: #570060;
+    width: 5px;
+    height: 5px;
+    border-radius: 24px;
+    border: 3px #570060 solid;
+    z-index: 2;
+}
+
+.qualPrevequitise, .qualNextequitise{
+    background-size: 22px;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.qualPrevequitise{
+    left: 10px;
+}
+
+.qualNextequitise{
+    right: 10px;
+}
+
+.qualPrevequitise:active, .qualNextequitise:active {
+    transform: scale (0.9);
+}
+/* qual slider equitise end */
+
+/* email start */
+.fixedEmail{
+	top: 0;
+	left: 0;
+	margin: 0;
+	height: auto;
+    width: 100%;
+	background: #a66e97;
+    position: absolute;
+}
+
+#scrollDIVEmail{
+	position: absolute;
+  	top: 0;
+  	left: 0;
+  	width: 100%;
+	height: 1580px;
+  	overflow: auto;
+  	cursor: pointer;
+  	float: left;
+	background: #151dff;
+}
+
+#contentEmail{
+	position: absolute;
+ 	top: 0;
+ 	left: 0;
+ 	width: 100%;
+ 	height: 4800px;
+ 	border-radius: 15px;
+ 	float: left;
+	background: #a22262;
+}
+
+/* emailHeroBanner ani start */
+#emailHeroBanner{
+    animation-name: emailHeroAni;
+    animation-duration: 40s;
+	animation-iteration-count: infinite;
+    /* none / forward / backward / both */
+    animation-fill-mode: forwards ;
+}	
+	
+@keyframes emailHeroAni{
+ 0%{ 
+	background: transparent;
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+	border-radius: 16px;
+} 
+25%{ 
+	background: #6364ff;
+	backdrop-filrgba: (130, 255, 253, 0.829);
+	-webkit-backdrop-filter: blur(10px);
+} 
+75%{ 
+	background: #05004d;
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+}            
+100%{ 
+    color: #6364ff; 
+	background: transparent; 
+} 
+	
+}
+/* emailHeroBanner ani end */
+
+/* iPhone style start */
+.iPhone770px{
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 770px;
+}
+
+.iPhfixed{
+	width: 100%;
+	height: 770px;
+	position: relative;
+	margin: 0;
+	border-radius: 35px;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+.iPhHeroBanner{
+  position: relative;
+  width: 100%;
+  height: 220px;
+  margin: 20px 0 0 0;
+  border-radius: 20px;
+}
+
+/* iPhHeroBanner ani start */ 
+#iPhHeroBanner{
+  animation-name: iPhHeroAni;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+}	
+  
+@keyframes iPhHeroAni{
+0%{ 
+  background: transparent;
+} 
+35%{ 
+  display: block;
+  background: #fff;
+} 
+50%{ 
+  background: #f6f7f4;
+} 
+95%{ 
+  background: #f6f7f4;
+}            
+100%{ 
+  background: transparent; 
+} 
+  
+}
+/* iPhHeroBanner ani end */
+
+/* heroAniSVG ani start */
+.eqPhBanner-1, .eqPhBanner-3, .eqPhBanner-5, .eqPhBanner-7, .eqPhBanner-8, .eqPhBanner-9, .eqPhBanner-11{
+  animation-name: heroAniSVGAni;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  /* none / forward / backward / both */
+  animation-fill-mode: forwards ;
+}	
+  
+@keyframes heroAniSVGAni{
+0%{ 
+  stroke: transparent;
+  background: transparent;
+} 
+25%{ 
+  stroke: #05004D;
+  background: transparent;
+  transform: rotate(210deg) !important;
+} 
+50%{ 
+  margin-top: 180px !important;
+  background: #6364ff;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 16px;  
+} 
+75%{ 	
+  stroke: #05004D;
+  background: #6364ff;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}            
+100%{ 
+  stroke: transparent;
+  color: transparent; 
+  background: transparent; 
+} 
+  
+}
+/* heroAniSVG ani end  */
+
+/* horizontal text element ani in iPhHeroBanner style start */
+.bgElementCon{
+  top: 0;
+  left: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  position: absolute;
+  float: left;
+  overflow: hidden;
+}
+
+.bgElement1{
+  width: auto;
+  height: auto;
+  padding: 2px !important;
+  text-align: center !important;
+  position: absolute;
+  animation: bgElement1ani;
+  animation-direction: reverse;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  font-size: .5em;
+  border-radius: 3px;
+}
+
+.bgElement2{
+  width: auto;
+  height: auto;
+  padding: 2px !important;
+  text-align: center !important;
+  position: absolute;
+  animation: bgElement2ani;
+  animation-direction: forwards;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  font-size: .5em;
+  border-radius: 3px;
+}
+
+.bgElement3{
+  width: auto;
+  height: auto;
+  padding: 2px !important;
+  text-align: center !important;
+  position: absolute;
+  animation: bgElement3ani;
+  animation-direction: reverse;
+  animation-duration: 40s;
+  animation-iteration-count: infinite;
+  font-size: .5em;
+  border-radius: 3px;
+}
+
+.bgElement4{
+  width: auto;
+  height: auto;
+  padding: 2px !important;
+  text-align: center !important;
+  position: absolute;
+  animation: bgElement4ani;
+  animation-direction: forwards;
+  animation-duration: 80s;
+  animation-iteration-count: infinite;
+  font-size: .5em;
+  border-radius: 3px;
+}
+
+@keyframes bgElement1ani{
+  0%   {background: transparent; color: transparent; left: -10%; top: 5%;}
+  20%  {background: #fff; color: #D8E5EE;}
+  35%  {background: #fff; color: #D8E5EE;}
+  45%  {background: #fff; color: #D8E5EE;}
+  50%  {background: #f6f7f4; color: #D8E5EE;}
+  75%  {background: #f6f7f4; color: #D8E5EE;}
+  95%  {background: #fff; color: #D8E5EE;}
+  100% {background: transparent; color: transparent; left: 110%; top: 5%;}
+}
+
+@keyframes bgElement2ani{
+  0%   {background: transparent; color: transparent; left: -20%; top: 25%;}
+  20%  {background: #D8E5EE; color: #fff;}
+  35%  {background: #f6f7f4; color: #D8E5EE;}
+  45%  {background: #f6f7f4; color: #D8E5EE;}
+  50%  {background: #fff; color: #D8E5EE;}
+  75%  {background: #fff; color: #D8E5EE;}
+  95%  {background: #fff; color: #D8E5EE;}
+  100% {background: transparent; color: transparent; left: 110%; top: 25%;}
+}
+
+@keyframes bgElement3ani{
+  0%   {background: transparent; color: #D8E5EE; left: -10%; top: 77%;}
+  20%  {background: #D8E5EE; color: #fff;}
+  35%  {background: #f6f7f4; color: #D8E5EE;}
+  45%  {background: #f6f7f4; color: #D8E5EE;}
+  50%  {background: #fff; color: #D8E5EE;}
+  75%  {background: #fff; color: #D8E5EE;}
+  95%  {background: #fff; color: #D8E5EE;}
+  100% {background: #fff; color: #D8E5EE; left: 110%; top: 77%;}
+}
+
+@keyframes bgElement4ani{
+  0%   {background: transparent; color: transparent; left: -40%; top: 93%;}
+  20%  {background: #fff; color: #D8E5EE;}
+  35%  {background: #fff; color: #D8E5EE;}
+  48%  {background: #fff; color: #D8E5EE; top: 88%;}
+  60%  {background: transparent; color: transparent;}
+  100% {background: transparent; color: transparent; left: 120%; top: 93%;}
+}
+/* horizontal text element ani in iPhHeroBanner style end */
+/* horizontal text element ani in iPhHeroBanner style end */
+
+/* account start */
+.accountContainer{
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  width: 99%;
+  height: 220px;
+  display: inline-block;
+}
+
+.accountConStyle{
+  top: 183px;
+  left: 0;
+  margin: 0;
+  position: absolute;
+  width: 100%;
+  height: 275px;
+  display: inline-block;
+  z-index: 6 !important;
+  pointer-events: none;
+  cursor: pointer;
+  background: #D8E5EE;
+  border-radius: 10px;
+  box-shadow: inset 5px 3px 8px #00026f38, inset -4px -4px 10px #fff, 2px 2px 2px #00026f05;
+}
+
+.FirstName, .Sirname, .Email, .Password, .Country{
+	 text-align: left !important;
+	 left: 0;
+	 font-size: 13px;
+	 padding: auto;
+	 color: #fff;
+}
+
+.FirstNameSignUp, .SirnameSignUp, .EmailSignUp, .CountrySignUp{
+	 text-align: left !important;
+	 font-size: 13px;
+	 padding: auto;
+}
+
+.account-menu a{
+  text-decoration: none;
+  border-radius: 25px;
+  display: block;
+}
+
+/* input fields style - type */
+input[type=text], select{
+  width: 100%;
+  /* margin indicates space between labels */
+  margin: 1% 0;
+  /* padding indicates width/height of labels */
+  padding: 3% 1%;
+  display: block;
+  border: 3px #05004d solid;
+  background: transparent;
+  border-radius: 4px;
+  box-sizing: border-box;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+input[type=text]:hover{
+	background: #05004d; 
+	color: #fff;
+	border: 3px solid #6364ff;
+	opacity: 1;
+}
+
+/* submit button */
+input[type=submit]{
+  color: #fff;
+  background-color: #6364ff;
+  border: 3px solid #fff;
+  border-radius: 25px;
+  font-weight: 900 !important;
+  cursor: pointer;
+}
+
+input[type=submit]:hover, input[type=select]:hover{
+  background-color: #fff;
+  color: #05004d;
+  border: 3px solid #6364ff;
+}
+
+.submitSignIn, .submitSignUp{
+  left: 35%;
+  width: 30%;
+  height: auto;
+  padding: 2% 2%;
+  margin: 17px auto;
+  background: #6364ff;
+  color: #fff;
+  border-radius: 25px;
+  text-align: center;
+  font-weight: 900;
+}
+
+.submitSignIn{
+  font-size: 1.1em;
+}
+
+.submitSignUp{
+  font-size: .75em;
+}
+
+.submitSignIn:hover, .submitSignUp:hover{
+  background: #05004d;
+}
+
+.submitSignIn a, .submitSignUp a{
+  color: #fff;
+}
+
+.submitSignIn:hover a, .submitSignUp:hover a{
+  color: #fff;
+}
+
+/* inner container */
+div.account{
+  width: 84%;
+  height: auto;
+  margin: 0 0 0 8%;
+  padding: 0;
+  border-radius: 5px;
+  pointer-events: all;  
+}
+/* account end */
+
+.iPhlogoSec{
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 170px;
+  background: rgba( 216, 229, 238, 0.25 );
+  backdrop-filter: blur( 4.5px );
+  -webkit-backdrop-filter: blur( 4.5px );
+  -moz-box-shadow: -1px 11px 5px -3px rgba(5,0,77,0.37);
+  box-shadow: -1px 11px 5px -3px rgba(5,0,77,0.37);
+  z-index: 10 !important;
+}
+
+/* iPhbtnSec contains search bar */
+.iPhbtnSec{
+  position: sticky;
+  top: 115px;
+  width: 100%;
+  height: 35px;
+  float: left;
+}
+
+/* grabberCon in QR banner start */
+.grabCon{
+  position: absolute;
+  width: 320px;
+  margin: 175px 0 0 35px;
+  padding: 0;
+}
+
+.dealCardWrapper{
+  position: relative;	
+  &:grabBefore,&:grabAfter{
+	  position: absolute;
+	  top: 0;
+	  display: block;
+	  height: 100%;
+  }
+  
+  &:grabBefore{
+	  left: 0;
+	  background: linear-gradient(90deg, #fff, transparent);
+  }
+  
+  &:grabAfter {
+	  right: 0;
+	  background: linear-gradient(-90deg, #fff, transparent);
+  }
+}
+
+.dealCardCon{
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 0;
+  cursor: pointer;
+  background: transparent;
+	  &.activeGrab {
+		  cursor: grab;
+  }
+}
+
+.grabCard{
+  display: inline-block;
+  margin: 0 5px;
+  user-select: none;
+  background: transparent;
+  color: #fff;
+  width: 70px;
+  height: 90px;
+  border-radius: 11px;
+  border: 3px transparent solid;
+}
+
+.grabCard:hover{
+  border: 3px #fff solid;
+}
+/* grabberCon in QR banner end */
+
+/* search-bar for iPhone start */
+/* search-bar-div is search bar container */
+#search-bar-div{
+  position: relative;
+  width: 100%;
+  height: 35px;
+  left: 0;
+  z-index: 2;
+  text-decoration: none !important;
+  text-underline: transparent;
+}
+
+#search-bar{
+  -webkit-appearance: none;
+  width: 70%;
+  height: 35px;
+  margin: 0 0 0 31px;
+  /* padding is height of search bar */
+  padding: 12px 5px;
+  border: 3px solid #05004d;
+  border-radius: 5px;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.35); */
+  /* text-indent is placeholder text's styling padding values */
+  text-indent: 40px;
+  transition: width .7s ease-in-out;
+  outline: #fff;
+  text-transform: capitalize;
+  text-decoration: none !important;
+}
+
+#search-bar:hover{
+  /* width is width on hover
+  width: 200px; */
+  background: #05004d;
+  color: #fff;
+  border-radius: 10px;
+  border: 3px solid #6364ff;
+}
+
+#LinkTo, #LinkSearchbar{
+  width: 100px;
+  height: 10vh;
+  left: 0;
+  bottom: 0;
+}
+
+.magIcon{
+  position: relative;
+  margin: -60px 0 0 38px;
+  font-size: 3em;
+  color: #6364ff;
+  padding: 10px 5px;
+  pointer-events: none;
+}
+
+/* Close icon */
+.close {
+	position: absolute;
+	text-align: center;
+	margin: 25px 0 0 305px;
+	width: 20px;
+	height: 20px;
+	opacity: 0.8;
+	border-radius: 50%;
+	border: 3px #fff solid;
+	cursor: pointer;
+	background: transparent;
+	z-index: 2;
+}
+
+.close:hover {
+	background: #05004d;
+	border: 3px #6364ff solid;
+  color: #fff;
+}
+
+#results{
+  position: absolute;
+  width: 72%;
+  height: auto;
+  margin: 1px 0 0 31px;
+  background: #D8E5EE;
+  box-shadow: inset 5px 3px 8px #00026f38, inset -4px -4px 10px #fff, 2px 2px 2px #00026f05;
+  border-radius: 0 0 20px 20px;
+  border: 3px #fff solid;
+  padding: 20px; 
+}
+
+#results::before, #results::after{
+  content: "";
+  position: absolute;
+  background: #f0f6fb;
+}
+
+#results::before {
+  top: 3px;
+  left: 4px;
+  border-radius: 50% 40% 60% 5%/ 20% 10% 30% 10%;
+  width: 5px;
+  height: 5px;
+}
+
+#results::after {
+  top: 2px;
+  left: 3px;
+  border-radius: 50% 40% 60% 5% / 20% 10% 90% 90%;
+  width: 3px;
+  height: 53px;
+  opacity: .2;
+}
+
+/* scroll container for menu buttons start */
+#resultsFix{
+  top: 0;
+  left: 0;
+  position: relative;
+	width: 100%;
+  height: 600px;
+  overflow: scroll;
+}
+
+/* resultsScroll moving part inner */
+#resultsScroll{
+  top: 0;
+  left: 0;
+  margin-top: 30px;
+  width: 100%;
+  height: 700px;
+}
+
+.description a, .category a{
+  color: #fff !important;
+}
+
+.description:hover, .category:hover{
+  background: #fff !important;
+}
+
+.description:hover a, .category:hover a{
+  color: #6364ff !important;
+}
+/* btnMenuCon is outer container for open/close div and dropdown end */
+/* search-bar for iPhone end */
+
+/* hamburger dropdown menu for iPhone start */
+/* btnMenuCon is outer container for open/close div and dropdown */
+.btnMenuCon{
+  position: absolute;
+  top: -5px;
+  left: 320px;
+  width: 37px;
+  height: 35px;
+  align-content: center;
+  z-index: 3;	
+}
+
+/* hamburger start */
+/* togMenuBtn contains HB menu lines */
+.togMenuBtn{
+  position: absolute;
+  width: auto;
+  height: 35px;
+  border: none;
+}
+
+/* menuBar is HB menu lines */
+a#hamburger .menuBar {
+	margin: 5px 0 0 0;
+	width: 37px;
+	height: 8px;
+	background: #fff;
+	border-radius: 3px;
+}
+/* .menuBar:hover is HB menu lines hover */
+
+a#hamburger:hover .menuBar:hover{
+	background: #6364ff;
+}
+/* hamburger end */
+
+/* menuDiv is open div containing menu grid */
+#menuDiv{
+	position: relative;
+	top: 21px;
+	left: -289px;
+	width: 321px;
+	height: 420px;
+	overflow: hidden;
+	border-radius: 0 0 20px 20px;
+	border: 3px #fff solid;
+	z-index: 99;
+  background: #D8E5EE;
+  box-shadow: inset 5px 3px 8px #00026f38, inset -4px -4px 10px #fff, 2px 2px 2px #00026f05;
+}
+
+#menuDiv::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 4px;
+  background: #f0f6fb;
+  border-radius: 50% 40% 60% 5%/ 20% 10% 30% 10%;
+  width: 5px;
+  height: 5px;
+}
+
+#menuDiv::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 3px;
+  background: #f0f6fb;
+  border-radius: 50% 40% 60% 5% / 20% 10% 90% 90%;
+  width: 3px;
+  height: 53px;
+  opacity: .2;
+}
+
+/* scroll container for menu buttons start */
+#menuFix{
+  top: 0;
+  left: -100px;
+  width: 340px;
+  height: 630px;
+  overflow: scroll;
+}
+
+/* menuScroll moving part inner */
+#menuScroll{
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 680px;
+}
+
+/* menu1 is btn style */
+.menu1{
+  width: 200px;
+  height: auto;
+  border-radius: 30px;
+  margin: 20px 0 20px 12%;
+  padding: 10px 20px; 
+  text-align: center;
+  background: #6364ff;
+  text-align: center !important;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.menu1:hover{
+  background: #05004d !important;
+}
+
+.menu1 a{
+  color: #fff !important;
+}
+
+.menu1:hover a{
+  color: #fff !important;
+  background: #05004d !important;
+}
+
+.DealBtn, .DealBtnQ a{
+  color: #fff;
+}
+
+.DealBtn:hover, .DealBtnQ:hover{
+  background: #fff !important;
+}
+
+.DealBtn:hover a, .DealBtnQ:hover a{
+  color: #05004d !important;
+}
+/* btnMenuCon is outer container for open/close div and dropdown end */
+/* hamburger dropdown menu for iPhone end */
+
+/* QR banner for iPhone start */
+.qrCon{
+  margin: -20px 0 0 30.3px;
+  width: 82.4%;
+  height: 420px;
+  border: 3px #fff solid;
+  position: absolute;
+  border-radius: 0 0 20px 20px;
+  background: #d8e5ee;
+  box-shadow: inset 5px 3px 8px #00026f38, inset -4px -4px 10px #fff, 2px 2px 2px #00026f05;
+  border: 3px #fff solid;
+}
+
+.qrCon::before, .qrCon::after{
+  content: "";
+  position: absolute;
+  background: #f0f6fb;
+}
+
+.qrCon::before{
+  top: 3px;
+  left: 4px;
+  border-radius: 50% 40% 60% 5%/ 20% 10% 30% 10%;
+  width: 5px;
+  height: 5px;
+}
+
+.qrCon::after{
+  top: 2px;
+  left: 3px;
+  border-radius: 50% 40% 60% 5% / 20% 10% 90% 90%;
+  width: 3px;
+  height: 53px;
+  opacity: .2;
+}
+
+.qrBanner{
+  margin: 0;
+  width: 100%;
+  height: 445px;
+  position: absolute;
+  float: left;
+  border-radius: 20px;
+}
+
+.qrOuter1, .qrOuter2, .qrOuter3{
+  margin: 0;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  float: left;
+}
+
+/* emoji div */
+.qrOuter1{
+  height: 40px;
+  overflow: visible;
+}
+
+.qrEmoji{
+  position: relative;
+	font-size: 2.781em;
+  line-height: 1.3em;
+	display: block;
+	margin: 0 -.7vw 0 0;
+  cursor: pointer;
+}
+
+/* text div */
+.qrOuter2{
+  top: 0; 
+  left: 0;
+  height: 110px;
+}
+
+.popText{
+  top: 0;
+  left: 0;
+  position: relative;
+  text-align: center;
+}
+
+/* QR code div */
+/* QR code start */
+#QR3, div, dl, dt, dd, h1, h2, h3, h4, h5, h6, p, pre, code, blockquote {
+  margin: 0;
+  padding: 0;
+  border-width: 0;
+}
+
+#QRcontainer {
+  display:inline-block;
+  /* margin indicates QR code coords */
+  top: 0;
+  width: 3vw;
+  height: auto;
+  margin: auto;
+}
+
+div.QRcode {
+  border-width: 0px;
+}
+/* QR code end */
+
+/* QR close popup div */
+.popOuterx{
+  height: 25px;
+  width: 25px;
+  margin: 20px 0 0 270px;
+  position: relative;
+}
+
+.x{
+  height: 20px;
+  width: 20px;
+  border: 3px solid #fff;
+	background-color: transparent;
+	color: #05004d;
+	border-radius: 2px;
+	cursor: pointer;
+  border-radius: 50%;
+}
+
+.x:hover{
+  border: 3px solid #6364ff;
+  background-color: #fff;
+	color: #6364ff;
+
+}
+/* QR banner for iPhone end */
+
+/* iPhscrollDiv scroll container for iPhone start */
+#iPhscrollDiv{
+  position: relative;
+	margin: 0;
+	width: 100%;
+	height: 780px;
+	overflow: auto;
+	border-radius: 50px;
+	background: #D8E5EE;
+	backdrop-filter: blur(20px);
+	-webkit-backdrop-filter: blur(20px);
+	border-radius: 45px;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+#iPhcontent{
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 2700px;
+}
+
+.iPhsubDiv{
+  position: relative;
+  width: 100%;
+  height: 125px;
+  margin: 20px 0 0 0;
+  float: left;
+}
+
+.iPhitem{
+	margin: 0 0 0 -1px;
+	padding: 6px 0 0 0;
+	width: 45px;
+	height: 30px;
+	background-color: transparent !important;
+}
+
+/* CON are body row containers for iPhone start */
+.Con1, .Con2, .Con3, .Con4, .Con5, .Con6, .Con7, .Con8, .Con9, .Con10, .Con11, .Con12, .Con13, .Con14, .Con15, .Con16, .Con17, .Con18, .Con19, .Con20, .Con21, .Con22, .Con23, .Con24, .Con25, .Con26, .Con27, .Con28{
+  position: relative;
+  width: 100%;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  height: auto;
+  float: left;
+}
+
+.spDiv{
+  position: relative;
+  width: 100%;
+  top: 0;
+  left: 0;
+  float: left;
+  height: 20px;
+}
+/* CON are body row containers for iPhone end */
+
+/* METCON - contains metrics don't lie stats - start */
+.MetricCon{
+  position: relative;
+  width: 98%;
+  height: 100%;
+  margin: 20% 0 0 0;
+  float: left;
+  border-radius: 20px;
+  border: 3px #fff solid;
+  background: #240db6;
+}
+
+.MetricHead{
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  float: left;
+  border-radius: 20px 20px 0 0;
+}
+
+.MetGrid {
+  width: 348px;
+  height: 225px;
+	display: grid;
+  /* grid-template-columns is width of columns */
+	grid-template-columns: 69px 69px 69px 69px;
+  /* grid-gap is width between columns */
+	grid-gap: 17px 17px;
+	background: fuchsia;
+	/* padding is padding around the outside of columns */
+	padding: 0 0 38px 27.5px;
+}
+
+.MetGrid > div {
+	text-align: center;
+	/* padding is padding around text/content inside grid squares */
+	padding: 0;
+  font-weight: 600;
+ /* height is height of grid squares */
+	height: 62px;
+	border-radius: 5px;
+  border: 3px #fff solid;
+  box-shadow: inset 5px 3px 8px #00026f38, inset -4px -4px 10px #fff, 2px 2px 2px #00026f05;
+}
+
+.waterDropMile, .waterDropCube{
+  width: 63px;
+  height: 62px;
+  margin: 0;
+  border-radius: 3%;
+  background: transparent;
+  box-shadow: inset 5px 3px 8px #00026f38, inset -4px -4px 10px #fff, 2px 2px 2px #00026f05;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  float: left;
+  cursor: pointer;
+  pointer-events: none;
+}
+
+.waterDropFace{
+  width: 63px;
+  height: 62px;
+  margin: -8px 0 0 0;
+  border-radius: 3%;
+  background: transparent;
+  box-shadow: inset 5px 3px 8px #00026f38, inset -4px -4px 10px #fff, 2px 2px 2px #00026f05;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  float: left;
+  cursor: pointer;
+  pointer-events: none;
+}
+
+.waterDropCube{
+  width: 63px;
+  height: 62px;
+  margin: -56px 0 0 0;
+  border-radius: 3%;
+  background: transparent;
+  box-shadow: inset 5px 3px 8px #00026f38, inset -4px -4px 10px #fff, 2px 2px 2px #00026f05;
+  position: relative;
+  float: left;
+  cursor: pointer;
+  pointer-events: none;
+}
+
+/* dimensionalCube style - start - this is Jordan Leigh's cube :) I hope he won't mind that I brought it here then altered it to learn to do what he's done, changed it to the Equitise style for their mockups then included it in my Portfolio */
+
+.sideHover1:hover{
+	background: #EEE1D8 !important;
+}
+
+.sideHover2:hover{
+	background: #DAEED8 !important;
+}
+
+#dimensionalCubeWrapper{
+	padding-top: 10%; 
+}
+
+.viewport{
+	-webkit-perspective: 200px;
+	-moz-perspective: 200px;
+	-ms-perspective: 200px;
+	-o-perspective: 200px;
+	perspective: 200px;
+	-webkit-perspective-origin: 50% 50px;
+	-moz-perspective-origin: 50% 50px;
+	-ms-perspective-origin: 50% 50px;
+	-o-perspective-origin: 50% 50px;
+	perspective-origin: 50% 50px;
+	-webkit-transform: scale(0.8, 0.8);
+	-moz-transform: scale(0.8, 0.8);
+	-ms-transform: scale(0.8, 0.8);
+	-o-transform: scale(0.8, 0.8);
+	transform: scale(0.8, 0.8);
+	-webkit-box-reflect: below 170px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0%, transparent), to(rgba(250, 250, 250, 0.1))); 
+}
+
+.cube{
+	position: relative;
+	margin: 0 auto;
+	height: 50px;
+	width: 50px;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-transform: rotateX(136deg) rotateY(1122deg);
+	-moz-transform: rotateX(136deg) rotateY(1122deg);
+	-ms-transform: rotateX(136deg) rotateY(1122deg);
+	-o-transform: rotateX(136deg) rotateY(1122deg);
+	transform: rotateX(136deg) rotateY(1122deg); 
+}
+
+.cube > div{
+	overflow: hidden;
+	position: absolute;
+	opacity: 0.9;
+	height: 50px;
+	width: 50px;
+	/* make SVGs with bgs to replace bg image 
+	background-image: url("https://jordizle.com/static/img/codepen/blank.png");*/
+	-webkit-touch-callout: none;
+	-moz-touch-callout: none;
+	-ms-touch-callout: none;
+   -o-touch-callout: none;
+	touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none; 
+}
+
+.cube > div > div.cube-image{
+	width: 50px;
+	height: 50px;
+	-webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	transform: rotate(180deg);
+	line-height: 20px;
+	font-size: 8px;
+	text-align: center;
+	color: #6364ff;
+	-webkit-transition: color 600ms;
+	-moz-transition: color 600ms;
+	-ms-transition: color 600ms;
+	-o-transition: color 600ms;
+	transition: color 600ms; }
+
+.cube > div > div.cube-image.active {
+	color: #0500d4; 
+}
+
+.cube > div:hover{
+	cursor: pointer;
+}
+
+.cube > div:active{
+	cursor: pointer;
+}
+
+.cube > div:first-child{
+	-webkit-transform: rotateX(90deg) translateZ(25px);
+	-moz-transform: rotateX(90deg) translateZ(25px);
+	-ms-transform: rotateX(90deg) translateZ(25px);
+	-o-transform: rotateX(90deg) translateZ(25px);
+	transform: rotateX(90deg) translateZ(25px);
+	outline: 3px solid #fff;
+	border-radius: 3px;
+}
+
+.cube > div:nth-child(2){
+	-webkit-transform: translateZ(25px);
+	-moz-transform: translateZ(25px);
+	-ms-transform: translateZ(25px);
+	-o-transform: translateZ(25px);
+	transform: translateZ(25px);
+	outline: 3px solid #fff;
+	border-radius: 3px;
+}
+
+.cube > div:nth-child(3){
+  -webkit-transform: rotateY(90deg) translateZ(25px);
+  -moz-transform: rotateY(90deg) translateZ(25px);
+  -ms-transform: rotateY(90deg) translateZ(25px);
+  -o-transform: rotateY(90deg) translateZ(25px);
+  transform: rotateY(90deg) translateZ(25px);
+  outline: 3px solid #fff;
+  border-radius: 3px;
+}
+
+.cube > div:nth-child(4){
+  -webkit-transform: rotateY(180deg) translateZ(25px);
+  -moz-transform: rotateY(180deg) translateZ(25px);
+  -ms-transform: rotateY(180deg) translateZ(25px);
+  -o-transform: rotateY(180deg) translateZ(25px);
+  transform: rotateY(180deg) translateZ(25px);
+  outline: 3px solid #fff;
+  border-radius: 3px;
+}
+
+.cube > div:nth-child(5){
+  -webkit-transform: rotateY(-90deg) translateZ(25px);
+  -moz-transform: rotateY(-90deg) translateZ(25px);
+  -ms-transform: rotateY(-90deg) translateZ(25px);
+  -o-transform: rotateY(-90deg) translateZ(25px);
+  transform: rotateY(-90deg) translateZ(25px);
+  outline: 3px solid #fff;
+  border-radius: 3px;
+}
+
+.cube > div:nth-child(6){
+  -webkit-transform: rotateX(-90deg) rotate(180deg) translateZ(25px);
+  -moz-transform: rotateX(-90deg) rotate(180deg) translateZ(25px);
+  -ms-transform: rotateX(-90deg) rotate(180deg) translateZ(25px);
+  -o-transform: rotateX(-90deg) rotate(180deg) translateZ(25px);
+  transform: rotateX(-90deg) rotate(180deg) translateZ(25px);
+  outline: 3px solid #fff;
+  border-radius: 3px;
+}
+
+object{
+	opacity: 1;
+}
+
+object:hover{
+	opacity: .5;
+}
+/* dimensionalCube style - end */
+
+/* waterDropMetGrid style - start */
+.waterDropMetGrid1, .waterDropMetGrid2, .waterDropMetGrid3, .waterDropMetGrid4{
+  width: 63px;
+  height: 63px;
+  margin: -58px 0 0 0;
+  border-radius: 3%;
+  background: transparent;
+  box-shadow: inset 5px 3px 8px #00026f38, inset -4px -4px 10px #fff, 2px 2px 2px #00026f05;
+  position: relative;
+  float: left;
+  cursor: pointer;
+  pointer-events: none;
+}
+
+.waterDropMetGrid5, .waterDropMetGrid6, .waterDropMetGrid7, .waterDropMetGrid8, .waterDropMetGrid9, .waterDropMetGrid10, .waterDropMetGrid11, .waterDropMetGrid12{
+  width: 63px;
+  height: 63px;
+  margin: -56px 0 0 0;
+  border-radius: 3%;
+  background: transparent;
+  box-shadow: inset 5px 3px 8px #00026f38, inset -4px -4px 10px #fff, 2px 2px 2px #00026f05;
+  position: relative;
+  float: left;
+  cursor: pointer;
+  pointer-events: none;
+}
+
+.waterDropMetGrid1::before, .waterDropMetGrid2::before, .waterDropMetGrid3::before, .waterDropMetGrid4::before, .waterDropMetGrid5::before, .waterDropMetGrid6::before, .waterDropMetGrid7::before, .waterDropMetGrid8::before, .waterDropMetGrid9::before, .waterDropMetGrid10::before, .waterDropMetGrid11::before, .waterDropMetGrid12::before, .waterDropMile::before, .waterDropFace::before{
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 4px;
+  background: #f0f6fb;
+  border-radius: 50% 40% 60% 5%/ 20% 10% 30% 10%;
+  width: 5px;
+  height: 5px;
+}
+
+.waterDropMetGrid1::after, .waterDropMetGrid2::after, .waterDropMetGrid3::after, .waterDropMetGrid4::after, .waterDropMetGrid5::after, .waterDropMetGrid6::after, .waterDropMetGrid7::after, .waterDropMetGrid8::after, .waterDropMetGrid9::after, .waterDropMetGrid10::after, .waterDropMetGrid11::after, .waterDropMetGrid12::after, waterDropMile::after, .waterDropFace::after{
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 3px;
+  background: #f0f6fb;
+  border-radius: 50% 40% 60% 5% / 20% 10% 90% 90%;
+  width: 3px;
+  height: 53px;
+  opacity: .2;
+}
+
+.waterDropCube::before{
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 4px;
+  background: #fff;
+  border-radius: 50% 40% 60% 95% / 20% 10% 30% 10%;
+  width: 5px;
+  height: 9px;
+}
+
+.waterDropCube::after{
+  content: "";
+  position: absolute;
+  top: 11px;
+  left: 3px;
+  background: #fff;
+  border-radius: 50% 40% 60% 5% / 20% 10% 90% 10%;
+  width: 6px;
+  height: 29px;
+  opacity: .2;
+}
+
+/* waterDropMetGrid style - end */
+
+.mileGridWrapper{
+  position: absolute;
+  margin: 0;
+  width: 63px;
+  height: 63px;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+/* milestone grid animated auto slider - start */
+#mileGridWrapper{
+  width: 100%;
+  height: 100%;
+	margin: 0;
+	float: left;
+  position: relative;
+}
+
+#mileGridWrapper > * {visibility: hidden; position: absolute;
+	top: 0; left: 0; animation: 20s autoplay1 infinite}
+
+@keyframes autoplay1 {
+	0% {visibility: visible}
+	20% {visibility: hidden}
+}
+
+#mileGridWrapper > *:nth-child(1) {animation-delay: 0s}
+#mileGridWrapper > *:nth-child(2) {animation-delay: 4s}
+#mileGridWrapper > *:nth-child(3) {animation-delay: 8s}
+#mileGridWrapper > *:nth-child(4) {animation-delay: 12s}
+#mileGridWrapper > *:nth-child(5) {animation-delay: 16s}
+
+.mileGrid1, .mileGrid2, .mileGrid3, .mileGrid4, .mileGrid5{
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  float: left; 
+}
+/* milestone grid animated auto slider - end */
+
+/*  eClip ani in metgrid style - start */
+.eBox{
+  top: 0;
+  left: 0;
+  position: relative;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.eClip{
+  top: 0;
+  left: 0;
+  margin: 0;
+  position: absolute;
+  animation: infinite;
+  filter: blur(.10px);
+}
+
+.eClip{
+  animation-name: eClip;
+  animation-duration: 20s !important;
+}	
+
+@keyframes eClip{
+  0% {transform: scale(1)}
+	50% {transform: scale(0)}
+	  100% {transform: scale(1)}
+	  /* from{-webkit-transform: rotate(35deg)} */
+}
+/*  eClip ani in metgrid style - end */
+
+/* drop/ani style - start */
+
+.drop{
+	pointer-events: none;
+}
+
+.drop::before, .drop::after{
+  content: "";
+  position: absolute;
+  background: #fff;
+}
+
+.drop::before{
+  margin: -57px 0 0 25px;
+  left: 10px;
+  border-radius: 50%;
+  width: 7px;
+  height: 12px;
+}
+
+.drop::after{
+  margin: -57px 0 0 -25px;
+  border-radius: 50% 20% 5% 10%/50% 20% 20% 30%;
+  width: 5px;
+  height: 32px;
+  opacity: .4;
+}
+
+.drop p{
+  color: #05004d;
+  font-size: 10px;
+  text-align: center;
+  font-weight: 600;
+}
+/* drop/ani style - end */
+
+/* confetti button style start */
+.confettiBtnBox{
+  top: 0;
+  left: 0;
+  position: absolute;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.confettiBtn{
+  position: relative;
+  margin: 0;
+  z-index: 9999 !important;
+  width: 61px;
+  height: 61px;
+  text-align: center;
+  border: none;
+  background: chartreuse;
+  cursor: pointer !important;
+}
+
+.confettiBtn a{
+  margin: 0;
+  left: 0;
+  text-align: center !important;
+  font-size: 12px;
+  padding: 5px 0; 
+  background: #6364ff;
+  border-radius: 15px;
+  border: #fff 3px solid;
+  color: #fff;
+  text-decoration: none !important;
+}
+
+.confettiBtn:hover a{
+  color: #05004d;
+  background: transparent;
+  border: #6364ff 3px solid;
+}
+
+.confettiBtn p{
+  pointer-events: none !important;
+}
+
+i{
+  position: absolute;
+  display: block;
+  left: 40%;
+  top: 55% !important;
+  width: 4px;
+  height: 4px;
+  opacity: 0;
+  animation: bang 2.1s ease-out forwards;
+  transform: rotate(0 - 60deg);
+  pointer-events: none;
+}
+
+@keyframes bang {
+  from {
+  transform: translate3d(0,0,0);
+  opacity: 1;
+}
+}
+/* confetti button style end */
+
+/* face style start */
+.success1, .success2{
+  top: 0;
+  left: 0;
+  position: relative;
+  margin: auto;
+  height: auto;
+  font-size: 7px;
+  text-align: center;
+  background: transparent;
+  border-radius: 10px;
+}  
+
+.success1{
+	color: #6364ff;
+}
+
+.success1:hover{
+  color: #fff;
+  background: #6364ff;
+}
+
+.success2{
+	color: #05004d;
+}
+
+.success2:hover{
+  color: #fff;
+  background: #05004d;
+}
+
+.face{
+  position: relative;
+  margin: 3.3px 0 3.3px 11.5px;
+  background: #FFD900;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 3px #fff solid;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.face::before {
+  content: '';
+  position: absolute;
+  top: 23px;
+  width: 10px;
+  height: 5px;
+  background: #f498bf;
+  border-bottom-left-radius: 70%;
+  border-bottom-right-radius: 70%;
+  transition: 0.5s;
+}
+
+.face:hover::before {
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+}
+
+.eyes{
+  position: absolute;
+  display: flex;
+}
+
+.eyes .eye{
+  position: relative;
+  width: 10px;
+  height: 10px;
+  display: block;
+  background: white;
+  border-radius: 50%;
+  margin: -10px auto 0 auto;
+}
+
+.eyes .eye::before{
+  content: '';
+  position: absolute;
+  top: 30% !important;
+  left: 30%;
+  background: #05004d;
+  width: 2px;
+  height: 2px;
+  border: 2px #6364ff solid;
+  border-radius: 50%;
+}
+/* face style end */
+
+/* outer socialCon */
+.socSVGcon{
+  position: relative;
+  width: 100%;
+  height: 45%;
+  top: 0;
+  left: 0;
+  margin:  2px 0 0 0;
+  overflow: visible;
+}
+
+/* num is dollar counters style */
+.num{
+	width: 100%;
+	margin: 0;
+	text-align: center;
+	font-weight: 600;
+	font-size: 15px;
+	float: left;
+}
+
+/* numSocial is dollar counters style */
+.numSocial{
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  color: #6364ff;
+  font-weight: 600;
+  font-size: 15px;
+  float: left;
+}
+
+.text{
+	width: 100%;
+   margin:  2px 0 0 0;
+	text-align: center;
+	color: #fff;
+	font-weight: 600;
+	font-size: 5px;
+	float: left;
+	background: transparent;
+}
+/* social counter style end */
+/* METCON - contains metrics don't lie stats - end */
+
+/* social/dollar counter style start */
+.sym1{
+	position: relative;
+	text-align: right;
+	float: left;
+}
+
+.sym2{
+	position: relative;
+	text-align: left;
+	float: left;
+}
+/* social/dollar counter style end */
+
+.RegBtn{
+  position: absolute;
+  width: 40%;
+  height: 80%;
+  margin: 1.4% 0 0 0;
+  border-radius: 20px;
+}
+
+/* universal deal card tap iPhslider and countdown timer start */
+.Con6{
+  position: relative;
+  width: 100%;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  height: auto;
+  float: left;
+}
+
+.iPhDealSec{
+  position: relative;
+  width: 100%;
+  height: auto;
+  top: 300px;
+  left: 0;
+}
+
+.iPhcardCon{
+  position: relative;
+  width: 100%;
+  height: 50%;
+  top: -210px;
+  left: 0;
+  float: left;
+}
+
+/* deal card container styling - deal is outer card container style */
+.iPhdeal{
+  height: 130px;
+  width: 65px;
+  border-radius: 3px;
+  margin: 5px 0 0 0 !important;
+}
+
+/* deal card */
+.iPhdeal:nth-child(odd){
+  /*border: #D8E5EE 3px solid !important;*/
+}
+
+/* deal card */
+.iPhdeal:nth-child(even) {
+  /*border: #D8E5EE 3px solid !important;*/
+}
+
+/* outer iPhslider container */
+.iPhslide{
+  width: 100%;
+  height: 130px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+
+.iPhslideIn{
+  margin: 0 5px 0 20px !important;
+  width: 220%;
+  display: flex;
+  gap: 5px;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 15px;
+}
+
+/* phslider universal tap slider style start */
+.phinner{
+  position: relative;
+  flex-grow: 1;
+  order: 2;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.phslider{
+  width: 390px;/* width is viewing area on screen for deal cards and slider buttons */
+  height: 125px;
+  margin-left: 0; /* margin controls the button slider position in div*/
+  display: flex;
+  position: relative;
+  border-radius: 20px;
+}
+
+.next, .prev{
+  width: 26px;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  text-align: center;
+  color: #05004d;
+  cursor: pointer;
+  background: transparent;
+  height: auto;
+}
+
+.next:hover, .prev:hover{
+  color: #6364ff;
+  background: rgba( 216, 229, 238, 0.25 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 4.5px );
+  -webkit-backdrop-filter: blur( 4.5px );
+}
+
+.prev{
+  order: 1;
+}
+
+.next{
+  order: 3;
+}
+
+.phitem{
+  width: 100%;
+  position: absolute;
+  display: none;
+}
+
+.dealCon{
+  width: 21.1%;
+  margin: 0 1.3%;
+  display: inline-block;
+}
+
+.phslider_1{
+  width: 390px;/* width is viewing area on screen for deal cards and slider buttons */
+  height: 90px !important;
+  margin-left: 0; /* margin controls the button slider position in div*/
+  display: flex;
+  position: relative;
+  border-radius: 20px;
+}
+
+/* phslider universal tap slider style start */
+.phinner1{
+  position: relative;
+  flex-grow: 1;
+  order: 2;
+  overflow: hidden;
+  white-space: nowrap;
+  height: 93px !important;
+}
+
+.dealCon2 {
+  width: 21.1%;
+  margin: 0 1.3%;
+  display: inline-block;
+  height: 90px;
+}
+
+.active {
+  position: relative;
+  display: block;
+}
+
+.phitem-next,.phitem-prev {
+  top: 0;
+  display: block;
+}
+
+.phitem-next{
+  left: 100%;
+}
+
+.phitem-prev{
+  left: -100%;
+}
+
+.phitem-left{
+  animation: slideInLeft 1s forwards;
+}
+
+.phitem-right{
+  animation: slideInRight 1s forwards;
+}
+
+.phactive-left{
+  animation: slideOutLeft 1s forwards;
+}
+
+.phactive-right{
+  animation: slideOutRight 1s forwards;
+}
+
+@keyframes slideInLeft{
+  from {left:100%;}
+  to {left:0;}
+}
+
+@keyframes slideInRight{
+  from {left:-100%;}
+  to {left:0;}
+}
+
+@keyframes slideOutLeft{
+  from {left:0;}
+  to {left:-100%;}
+}
+
+@keyframes slideOutRight{
+  from {left:0;}
+  to {left:100%;}
+}
+/* phslider tap slider style end */
+
+/* counter start */
+:root{
+--smaller: .75;
+}
+
+.container{  
+	width: 40px;
+	height: 5px;
+	margin: 4px 0 0 -3px;
+	text-align: center;
+	border: #fff 3px solid;
+	border-radius: 3px; 
+}
+
+/* countdown to deal close heading */
+h4{
+	color: #05004d;
+	font-weight: normal;
+	font-size: 1em;
+	text-transform: uppercase;
+}
+
+/* deal card grabber slider and counter style start */
+/* deal card grabber slider style start */
+.cardCon{
+  position: relative;
+  width: 100%;
+  height: 50%;
+  margin: 80px 0 0 0;
+}
+
+/* deal card container styling - deal is outer card container style */
+.deal {
+  height: 85px;
+  width: 90px;
+  border-radius: 3px;
+  box-shadow: 1px 2px 5px .1px rgba(0, 0, 0, 0.15);
+  background-color: transparent;
+}
+
+/* d1Hero - banner svg container */
+.d1Hero{
+  top: 0;
+  left: 0;
+  margin: -3px 0 0 -2.4px;
+  width: 64px;
+  height: auto;
+  justify-content: center;
+  border: 3px #fff solid;
+  border-radius: 3px;	
+  box-shadow: 1px 2px 5px .1px rgba(0, 0, 0, 0.15);
+}
+
+.d1Hero:hover{
+  border: 3px #6364ff solid;
+}
+
+/* d1Hero - banner image container */
+.d1HeroImage{
+  top: 0;
+  left: 0;
+  margin: -3px 0 0 -3px;
+  height: auto;
+  justify-content: center;
+}
+
+/* banner image */
+.heroH{
+  width: 63px;
+  justify-content: center;
+  height: auto;
+  border: #fff 3px solid;
+  border-radius: 3px;
+  box-shadow: 1px 2px 5px .1px rgba(0, 0, 0, 0.15);
+}
+
+.heroH:hover{
+  width: 59px;
+  margin: 1px 0 0 2.9px;
+}
+
+/* type of raise eg Retail - container */
+.RetCon{
+  position: absolute;
+  margin: 27.5px 0 0 -1px;
+  width: 1vw;
+  height: 9px;
+  background-color: #fff;
+  border-radius: 3px;
+}
+
+/* type of raise eg Retail - text and button style */
+.retail{
+  width: 100%;
+  height: 100%;
+  margin: 1px 0 0 -2px;
+  font-size: 6px;
+  text-align: center;
+  color: #6364ff;	
+}
+
+/* brand logo CONTAINER - deal card EXAMPLE */
+/* brand logo on deal card EXAMPLE */
+.d1Logo{
+  padding: 0;
+  justify-content: center;
+}
+
+.d1LogCon{
+  margin: 0;
+  width: 100%;
+  height: 20px;
+}
+
+.dLogIn{
+  position: relative;
+  width: 33.33%;
+  height: 20px;
+  float: left;
+}
+
+/* brand's text container */
+.mTitle{
+  width: 100%;
+  text-align: center;
+}
+
+/* brand's name - title text */
+.title{	
+  width: 100%;
+  text-align: center;
+  line-height: 1em;
+  font-size: .5em;
+  color: #05004d;
+  height: auto;
+  margin: 3px auto auto auto !important;
+  background: #fff !important;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+/* brand's name - title text */
+.title:hover{ 
+  color: #fff;
+  background: #6364ff !important;
+}
+
+/* brand's description text */
+.des{
+  margin: 3px 0;
+  width: 100%;
+  text-align: center;
+  line-height: 1em;
+  font-size: .4em;
+  color: #6364ff;
+}
+
+.des:hover{
+  color: #fff;
+  background: #05004d;
+  border-radius: 5px;
+}
+
+/* deal card */
+.deal:nth-child(odd) {
+  background-color: #fff !important;
+  border: #fff 3px solid !important;
+}
+
+/* deal card */
+.deal:nth-child(even) {
+  background-color: #fff !important;
+  border: #fff 3px solid !important;
+}
+
+/* counter text */
+li{
+  width: 20%;
+  height: auto;
+  color: #05004d; 
+  display: block;
+  float: left;
+  list-style-type: none;
+  padding: 0 .5px .5px .5px;
+  text-transform: uppercase;
+}
+
+/* counter numbers */
+li span{
+  display: flex;
+}
+
+.dClose{
+	font-weight: 200;
+	font-size: 1.5em !important;
+	color: #6364ff !important;
+}
+
+/* emoji containers */
+.emoDcon, .emoFcon, .emoSEcon, .emoScon, .emoVcon, .emoYcon, .emoPcon, .emoNHcon, .emoDconMQ, .emoFconMQ, .emoSconMQ, .emoSEconMQ, .emoVconMQ, .emoNHconMQ, .emoYconMQ, .emoPconMQ, .emoSEconMQ{
+  position: relative;
+  top: 0;
+  left: 0;
+  margin: 0;
+  width: 33.33%;
+  height: 100%;
+  float: left;
+}
+
+/* phslider tap slider1 counters style start */
+.timCond, .timConf, .timConff, .timCons, .timConnh, .timConv, .timConse, .timConsa, .timConp, .timCony, .timContt, .timCondMQ, .timConfMQ, .timConffMQ, .timConsMQ, .timConnhMQ, .timConvMQ, .timConseMQ, .timConsaMQ, .timConpMQ, .timConyMQ, .timConttMQ{  
+  width: 100%;
+  height: 27px;
+  margin: -1px 0 0 -3px;
+  text-align: center;
+  border: #fff 3px solid;
+  border-radius: 3px;
+  background-color: #f6f7f4;
+}
+
+/* countdown to deal close heading */
+#headlined, #headlinef, #headlines, #headlinenh, #headlinev, #headlinese, #headlinesa, #headlinep, #headliney, #headlinett, #headlinedMQ, #headlinefMQ, #headlinesMQ, #headlinenhMQ, #headlinevMQ, #headlineseMQ, #headlinesaMQ, #headlinepMQ, #headlineyMQ, #headlinettMQ{
+  margin: 2px 0 2px 0;
+  color: #89a2ff;
+  font-weight: 600;
+  font-size: 7px !important;
+  letter-spacing: .2px;
+  text-transform: uppercase;
+}
+
+/* countdown number styling */
+#daysd, #hoursd, #minutesd, #secondsd, #daysf, #hoursf, #minutesf, #secondsf, #daysff, #hoursff, #minutesff, #secondsff, #dayss, #hourss, #minutess, #secondss, #daysnh, #hoursnh, #minutesnh, #secondsnh, #daysv, #hoursv, #minutesv, #secondsv, #daysse, #hoursse, #minutesse, #secondsse, #dayssa, #hourssa, #minutessa, #secondssa, #daysp, #hoursp, #minutesp, #secondsp, #daysy, #hoursy, #minutesy, #secondsy, #daystt, #hourstt, #minutestt, #secondstt,
+#daysdMQ, #hoursdMQ, #minutesdMQ, #secondsdMQ, #daysfMQ, #hoursfMQ, #minutesfMQ, #secondsfMQ, #daysffMQ, #hoursffMQ, #minutesffMQ, #secondsffMQ, #dayssMQ, #hourssMQ, #minutessMQ, #secondssMQ, #daysnhMQ, #hoursnhMQ, #minutesnhMQ, #secondsnhMQ, #daysvMQ, #hoursvMQ, #minutesvMQ, #secondsvMQ, #daysseMQ, #hoursseMQ, #minutesseMQ, #secondsseMQ, #dayssaMQ, #hourssaMQ, #minutessaMQ, #secondssaMQ, #dayspMQ, #hourspMQ, #minutespMQ, #secondspMQ, #daysyMQ, #hoursyMQ, #minutesyMQ, #secondsyMQ, #daysttMQ, #hoursttMQ, #minutesttMQ, #secondsttMQ
+{
+	margin: 0 .7px;
+	width: 14px;
+	height: auto;
+	color: #6364ff;
+	background-color: #fff;
+	border-radius: 5px;
+	font-weight: 600;
+	font-size: 5.8px;
+	letter-spacing: .1px;
+	float: left;
+}
+
+/* days, hours, minutes, seconds text styling */
+.daysd, .hoursd, .minutesd, .secondsd, .daysf, .daysff, .hoursf, .minutesf, .secondsf, .dayss, .hourss, .minutess, .secondss, .daysnh, .hoursnh, .minutesnh, .secondsnh, .daysv, .hoursv, .minutesv, .secondsv, .daysse, .hoursse, .minutesse, .secondsse, .dayssa, .hourssa, .minutessa, .secondssa, .daysp, .hoursp, .minutesp, .secondsp, .daysy, .hoursy, .minutesy, .secondsy, .daystt, .hourstt, .minutestt, .secondstt,
+.daysdMQ, .hoursdMQ, .minutesdMQ, .secondsdMQ, .daysfMQ, .daysffMQ, .hoursfMQ, .minutesfMQ, .secondsfMQ, .dayssMQ, .hourssMQ, .minutessMQ, .secondssMQ, .daysnhMQ, .hoursnhMQ, .minutesnhMQ, .secondsnhMQ, .daysvMQ, .hoursvMQ, .minutesvMQ, .secondsvMQ, .daysseMQ, .hoursseMQ, .minutesseMQ, .secondsseMQ, .dayssaMQ, .hourssaMQ, .minutessaMQ, .secondssaMQ, .dayspMQ, .hourspMQ, .minutespMQ, .secondspMQ, .daysyMQ, .hoursyMQ, .minutesyMQ, .secondsyMQ, .daysttMQ, .hoursttMQ, .minutesttMQ, .secondsttMQ{
+	width: 25%;
+	margin: 1.8px 0 0 -.5px;
+	text-align: center;
+	height: auto;
+	font-size: 3px;	
+	font-weight: 600;
+	color: #05004d;
+	float: left;
+}
+
+.emojid, .emojif, .emojiff, .emojis, .emojinh, .emojiv, .emojise, .emojisa, .emojip, .emojiy, .emojitt, .emojidMQ, .emojifMQ, .emojiffMQ, .emojisMQ, .emojinhMQ, .emojivMQ, .emojiseMQ, .emojisaMQ, .emojipMQ, .emojiyMQ, .emojittMQ{
+  display: none;
+}
+
+.emojid, .emojif,.emojiff, .emojis, .emojinh, .emojiv, .emojise, .emojisa, .emojip, .emojiy, .emojitt, .emojidMQ, .emojifMQ,.emojiffMQ, .emojisMQ, .emojinhMQ, .emojivMQ, .emojiseMQ, .emojisaMQ, .emojipMQ, .emojiyMQ, .emojittMQ span{
+  font-size: .5em;
+}
+/* phslider tap slider1 counters style end */
+
+/* footer buttons start */
+.iPhbtnFoot{
+  position: sticky;
+  top: 0;
+  width: 20%;
+  height: 55px;
+  float: left;
+}
+
+.ftBtnCon{
+  position: relative;
+  width: 84%;
+  height: 100%;
+  top: 0;
+  margin-left: 31px;
+}
+
+.iPhbtnf1, .iPhbtnf2, .iPhbtnf3, .iPhbtnf4, .iPhbtnf5{
+  position: absolute;
+  width: 85%;
+  height: 30px;
+  background-color: #D8E5EE;
+  border: 3px solid #05004D;
+  border-radius: 25px;
+  top: 0;
+  left: 1.5px;
+  text-align: center;
+  color: #05004D;
+  line-height: 2.9em;
+  font-size: .65em;
+}
+
+.ftSocCon{
+  position: relative;
+  width: 85%;
+  height: 100%;
+  top: 0;
+  margin: auto;
+}
+
+.iPhbtnf1:hover, .iPhbtnf2:hover, .iPhbtnf3:hover, .iPhbtnf4:hover, .iPhbtnf5:hover{
+  -webkit-box-shadow: -1px 6px 5px -3px rgba(5,0,77,0.37);
+  -moz-box-shadow: -1px 6px 5px -3px rgba(5,0,77,0.37);
+  box-shadow: -1px 6px 5px -3px rgba(5,0,77,0.37);
+}
+/* footer buttons end */
+
+/* social icons start */
+.ph1Social1, .ph1Social2, .ph1Social3, .ph1Social4{
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 81.5px;
+  height: 78px;
+  float: left; 
+}
+/* social icons end */
+
+/* publication logo svgs for animated footer auto slider start */
+#pubSlide{
+  width: 100%;
+  height: 70px;
+  position: relative;
+}
+
+#pubSlide > * {visibility: hidden; position: absolute;
+	top: 0; left: 0; animation: 20s autoplay1 infinite}
+
+@keyframes autoplay1 {
+	0% {visibility: visible}
+	20% {visibility: hidden}
+}
+
+#pubSlide > *:nth-child(1) {animation-delay: 0s}
+#pubSlide > *:nth-child(2) {animation-delay: 4s}
+#pubSlide > *:nth-child(3) {animation-delay: 8s}
+#pubSlide > *:nth-child(4) {animation-delay: 12s}
+#pubSlide > *:nth-child(5) {animation-delay: 16s}
+
+.SVGcon1, .SVGcon2, .SVGcon3, .SVGcon4, .SVGcon5{
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 390px;
+  height: 100px;
+  float: left; 
+}
+/* publication logo svgs for animated footer auto slider start */
+
+.iPhsvg{
+  width: 445px;
+  height: 770px;
+  z-index: 2;
+  position: absolute;
+  margin: -12px 0 0 -22px;
+  pointer-events: none;
+}
+/* iPhone style end */
+
+/* figures screen start */
+/* charOutCon1 is outer container for open/close div and dropdown */
+.charOutCon1, .charOutCon2, .charOutCon3, .charOutCon4, .charOutCon5, .charOutCon6, .charOutCon7, .charOutCon8, .charOutCon9, .charOutCon10, .charOutCon11, .charOutCon12, .charOutCon13, .charOutCon14, .charOutCon15, .charOutCon16, .charOutCon17, .charOutCon18, .charOutCon19, .charOutCon20, .charOutCon21, .charOutCon22, .charOutCon23, .charOutCon24, .charOutCon25, .charOutCon26, .charOutCon27, .charOutCon28, .charOutCon29, .charOutCon30, .charOutCon31, .charOutCon32, .charOutCon33, .charOutCon34, .charOutCon35, .charOutCon36, .charOutCon37, .charOutCon38, .charOutCon39, .charOutCon40{
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 10%;
+	height: 55px;
+	align-content: center;
+	float: left;
+}
+
+.charBtn1, .charBtn2, .charBtn3, .charBtn4, .charBtn5, .charBtn6, .charBtn7, .charBtn8, .charBtn9, .charBtn10, .charBtn11, .charBtn12, .charBtn13, .charBtn14, .charBtn15, .charBtn16, .charBtn17, .charBtn18, .charBtn19, .charBtn20, .charBtn21, .charBtn22, .charBtn23, .charBtn24, .charBtn25, .charBtn26, .charBtn27, .charBtn28, .charBtn29, .charBtn30, .charBtn31, .charBtn32, .charBtn33, .charBtn34, .charBtn35, .charBtn36, .charBtn37, .charBtn38, .charBtn39, .charBtn40{
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	align-content: center;
+	background-color: transparent;
+	float: left;
+}
+/* a#charBar1 is the visible clickable div area (include character outlines in these) */
+a#charBar1, a#charBar2, a#charBar3, a#charBar4, a#charBar5, a#charBar6, a#charBar7, a#charBar8, a#charBar9, a#charBar10, a#charBar11, a#charBar12, a#charBar13, a#charBar14, a#charBar15, a#charBar16, a#charBar17, a#charBar18, a#charBar19, a#charBar20, a#charBar21, a#charBar22, a#charBar23, a#charBar24, a#charBar25, a#charBar26, a#charBar27, a#charBar28, a#charBar29, a#charBar30, a#charBar31, a#charBar32, a#charBar33, a#charBar34, a#charBar35, a#charBar36, a#charBar37, a#charBar38, a#charBar39, a#charBar40{
+  	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+  	background-color: transparent;
+	float: left;
+}
+
+.charBarCon1, .charBarCon2, .charBarCon3, .charBarCon4, .charBarCon5, .charBarCon6, .charBarCon7, .charBarCon8, .charBarCon9, .charBarCon10, .charBarCon11, .charBarCon12, .charBarCon13, .charBarCon14, .charBarCon15, .charBarCon16, .charBarCon17, .charBarCon18, .charBarCon19, .charBarCon20, .charBarCon21, .charBarCon22, .charBarCon23, .charBarCon24, .charBarCon25, .charBarCon26, .charBarCon27, .charBarCon28, .charBarCon29, .charBarCon30, .charBarCon31, .charBarCon32, .charBarCon33, .charBarCon34, .charBarCon35, .charBarCon36, .charBarCon37, .charBarCon38, .charBarCon39, .charBarCon40{
+	top: 0;
+	left: 0;
+	width: 50%;
+	height: 100%;
+	align-content: center;
+  	background-color: transparent;
+}
+
+/* charDiv is div that opens on click (include colour characters) */
+#charDiv1, #charDiv2, #charDiv3, #charDiv4, #charDiv5, #charDiv6, #charDiv7, #charDiv8, #charDiv9, #charDiv10, #charDiv11, #charDiv12, #charDiv13, #charDiv14, #charDiv15, #charDiv16, #charDiv17, #charDiv18, #charDiv19, #charDiv20, #charDiv21, #charDiv22, #charDiv23, #charDiv24, #charDiv25, #charDiv26, #charDiv27, #charDiv28, #charDiv29, #charDiv30, #charDiv31, #charDiv32, #charDiv33, #charDiv34, #charDiv35, #charDiv36, #charDiv37, #charDiv38, #charDiv39, #charDiv40{
+ 	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center; 
+  	background-color: transparent;
+  	z-index: 99;
+	float: left;
+	pointer-events: none;
+}
+
+.charDivCon1, .charDivCon2, .charDivCon3, .charDivCon4, .charDivCon5, .charDivCon6, .charDivCon7, .charDivCon8, .charDivCon9, .charDivCon10, .charDivCon11, .charDivCon12, .charDivCon13, .charDivCon14, .charDivCon15, .charDivCon16, .charDivCon17, .charDivCon18, .charDivCon19, .charDivCon20, .charDivCon21, .charDivCon22, .charDivCon23, .charDivCon24, .charDivCon25, .charDivCon26, .charDivCon27, .charDivCon28, .charDivCon29, .charDivCon30, .charDivCon31, .charDivCon32, .charDivCon33, .charDivCon34, .charDivCon35, .charDivCon36, .charDivCon37, .charDivCon38, .charDivCon39, .charDivCon40{
+	position: relative;
+	margin: 0 25%;
+	width: 50%;
+	height: 100%;
+	align-content: center;
+	float: left;
+}
+/* figures screen end */
+
+/* scrollscreens and containers start */
+.scrSpaceCol1, .scrSpaceCol2, .scrSpaceCol3{
+  	position: relative;
+  	top: 2vh;
+  	left: 0;
+  	width: 33.33%;
+  	float: left;
+  	align-content: center;	
+}
+
+.screenDivFull, .screenDivSec, .screenDivSecSpace, .spaceDiv, .spaceDiv20, .screenDiv{
+	position: relative;
+  	top: 0;
+  	left: 0;
+  	width: 100%;
+	float: left;
+}
+
+.screenDivFull{
+	height: auto;
+	align-content: center;
+}
+
+.screenDivSec{
+  	height: auto;
+  	align-content: center;
+}
+
+.screenDivSecSpace{
+  	height: 40px;
+}
+
+.spaceDiv{
+  	height: 100px;
+}
+
+.spaceDiv20{
+  	height: 20px;	
+}
+
+.spaceDivMQ{
+	display: none;
+}
+
+.screenDiv{
+	height: 20px;
+}
+
+.paraConCounters, .paraCon{
+	position: relative;
+	width: 100%;
+	float: left;
+}
+
+.paraCon{
+  	top: 0;
+  	left: 0;
+  	display: flex;
+  	justify-content: center;
+  	height: auto;
+  	cursor: pointer;
+}
+
+.paraConLogoInner{
+	position: relative;
+	top: 0;
+	width: 407px;
+	height: 120px;
+	display: flex;
+	justify-content: center;
+}
+/* scrollscreens and containers end */
+
+.counterThird1, .counterThird2, .counterThird3{
+	display: flex;
+  	justify-content: center;
+	position: relative;
+	width: 33.33%;
+	height: 100%;
+	margin: 0;
+	padding: 20px 0;
+	top: 0;
+	left: 0;
+	float: left;
+	overflow: visible;
+}
+
+/* countdown to deal close start */
+.timCon{  
+  	width: 100%;
+  	height: 62px !important;
+  	margin: 0;
+	padding: 0;
+	top: 0;
+	left: 0;
+  	text-align: center;
+	background: #d0dce4;
+  	border-radius: 10px;
+	box-shadow: inset 9px 15px 7px #00026f38, inset -5px -3px 17px #fff, inset -5px -5px 7px #fff;
+}
+
+.timCon::before, .timCon::after{
+	content: "";
+	position: absolute;
+	margin-top: 3.5% !important;
+	background: #f0f6fb;
+}
+
+.timCon::before{
+	left: 11px;
+	border-radius: 100% 10% 60% 5%/ 20% 10% 30% 99%;
+	width: 10px;
+	height: 10px;
+}
+
+.timCon::after{
+	left: 10px;
+	border-radius: 50% 40% 60% 5% / 20% 10% 90% 90%;
+	width: 3px;
+	height: 20%;
+	opacity: .3;
+}
+
+/* countdown to deal close - dealHeadline */
+#dealHeadline{
+  	margin: 1.5px 0 3.8px 0;
+  	color: #05004d;
+  	font-weight: 2000;
+  	letter-spacing: 1.2px;
+  	font-size: 12px;
+  	text-transform: uppercase;
+}
+
+#days{
+	width: 18%;
+	margin: 0 3.5%;
+	height: auto;
+	float: left;
+	color: #05004d;
+	font-size: 15px;
+	font-weight: 1000;
+    letter-spacing: .3px;
+	padding: 4px 0;
+	background: #D8E5EE;
+	border-radius: 5px;
+	float: left;
+	border-radius: 5px;
+}
+
+#hours, #minutes, #seconds{
+	width: 18%;
+	margin: 0 3.5%;
+	height: auto;
+	float: left;
+	color: #6364ff;
+	font-size: 15px;
+	font-weight: 1000;
+    letter-spacing: .3px;
+	padding: 4px 0;
+	background: #D8E5EE;
+	border-radius: 5px;
+	float: left;
+	border-radius: 5px;
+}
+
+.days{
+	width: 18%;
+	margin: 0 3.5%;
+	height: auto;
+	left: 0;
+	float: left;
+	font-size: 9px;
+	font-weight: 600;
+	padding: 4px 0;
+    letter-spacing: .3px;
+	color: #fff;
+	float: left;
+}
+
+.hours, .minutes, .seconds{
+	width: 18%;
+	margin: 0 3.5%;
+	height: auto;
+	left: 0;
+	float: left;
+	font-size: 9px;
+	font-weight: 600;
+	padding: 4px 0;
+    letter-spacing: .3px;
+	color: #05004d;
+	float: left;
+}
+
+.emoji{
+  	display: none;
+  	padding: 1px;
+}
+
+.emoji span{
+  	font-size: 2.9em;
+  	padding: 20px 10px 10px 10px;
+}
+/* countdown to deal close timer end */
+
+.num{
+	font-size: 10px;
+	width: 60px;
+	margin-top: 0;
+	text-align: center;
+	color: #fff;
+	font-weight: 600;
+	float: left;
+}
+
+.text{
+  	width: 60px;
+  	color: #fff;
+  	font-size: 7px;
+  	text-align: center; 
+  	font-weight: 400;
+  	line-height: 2;
+  	float: left;
+}
+/* counter style end */
+
+/* tbh banner start */
+.mobMREC{
+	position: absolute;
+	width: 450px;
+	height: 450px;
+	align-content: center;
+	margin: 50px 0 0 50px;
+	background-color: #ffe0d9;
+	box-shadow: 1px 1px 10px 0 rgba(0, 0, 77, 0.9);
+}
+
+.MREChead{
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100px;
+	float: left;
+	background-color: transparent;
+	z-index: 3;
+}
+
+.MREChead1, .MREChead2, .MREChead3{
+	position: relative;
+	top: 0;
+	left: 0;
+	height: 100%;
+	float: left;
+	z-index: 3;
+	background-color: transparent;
+}
+
+.MREChead1{
+	width: 30%;
+}
+
+.MREChead2{
+	width: 40%;
+	overflow: visible;
+}
+
+.MREChead3{
+	width: 30%;
+}
+
+.MRECcta{
+	position: absolute;
+	width: 150px;
+	height: 150px;
+	align-content: center;
+	top: 0;
+	left: 0;
+	z-index: 3;
+}
+
+.MRECin1, .MRECin2, .MRECin3{
+	position: relative;
+	height: 290px;
+	top: 0;
+	left: 0;
+	float: left;
+	background-color: transparent;
+}
+
+.MRECin1{
+	width: 30%;
+}
+
+.MRECin2{
+	width: 40%;
+}
+
+.MRECin3{
+	width: 30%;
+}
+
+.MRECslider{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	float: left;
+	background-color: transparent;
+}
+
+.MRECRegCon{
+	position: relative;
+	width: 100%;
+	justify-content: center;
+	display: flex;
+	height: 45px;
+	bottom: -239px;
+	left: 0;
+	float: left;
+	background-color: transparent;
+}
+
+.regBtn{
+	position: relative;
+	width: 70%;
+	height: 45px;
+	border-radius: 25px;
+	text-align: center;
+	background-color: #6364ff;
+	font-weight: 600;
+	letter-spacing: 3px;
+	line-height: 2.8em;
+	color: #fff;
+}
+
+.MRECellipse{
+	position: absolute;
+	width: 210px;
+	height: 210px;
+	align-content: center;
+	margin: 104px 120px 0 120px;
+	border-radius: 50%;
+	border: 3px #fff solid;
+	background-color: transparent;
+	opacity: .6;
+	pointer-events: none;
+	z-index: 3;
+}
+
+.TBHslider{
+  	position: absolute;
+  	top: 25.1%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+  	width: 450px;
+  	height: 140px;
+  	background-color: transparent;
+	z-index: 3;
+}
+
+.TBHwrapper{
+  	overflow: hidden;
+  	position: relative;
+  	background: transparent;
+  	z-index: 1;
+}
+
+#TBHitems{
+  	width: 10000px;
+  	position: relative;
+  	top: 0;
+  	left: -450px;
+}
+
+#TBHitems.shifting{
+  	transition: left .2s ease-out;
+}
+
+.TBHslide{
+  	width: 450px;
+  	height: 216px;
+  	top: 0;
+  	cursor: pointer;
+  	float: left;
+  	display: flex;
+  	flex-direction: column;
+  	justify-content: center;
+  	transition: all 1s;
+  	position: relative;
+  	background: transparent;
+}
+
+.TBHcontrol{
+  	position: absolute;
+  	top: 50%;
+  	width: 5px;
+  	height: 5px;
+  	margin: 25px 0 0 30px;
+  	border: 3px #fff solid;
+  	border-radius: 20px;
+  	opacity: .6;
+  	z-index: 2;
+}
+
+.TBHcontrol:hover{
+  	background: transparent;
+  	width: 5px;
+  	height: 5px;
+  	border-radius: 24px;
+  	border: 3px #FF596C solid;
+  	z-index: 2;
+}
+
+.TBHprev, .TBHnext{
+  	background-size: 22px;
+  	background-position: center;
+  	background-repeat: no-repeat;
+  	cursor: pointer;
+}
+
+.TBHprev{
+  	left: 60px;
+}
+
+.TBHnext{
+  	right: 85px;
+}
+
+.TBHprev:active, .TBHnext:active{
+  	transform: scale(0.9);
+}
+
+.MRECfoot{
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 60px;
+	float: left;
+	background-color: transparent;
+}
+
+.TBHdisCon{
+	position: absolute;
+	width: 100%;
+	height: 52px;
+	bottom: 3px;
+	left: 0;
+	float: left;
+	background-color: transparent;
+}
+
+.TBHdisSVG{
+	position: absolute;
+	width: 100%;
+	height: 52px;
+	bottom: 0;
+	left: 0;
+	float: left;
+	background-color: transparent;
+}
+
+#disCon a{
+	background-color: #fff;
+	text-decoration: none;
+	color: #05004d;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.disCon{
+	position: relative;
+	width: 450px;
+	height: 50px;
+	bottom: 5px;
+	left: 0;
+	float: left;
+}
+
+.disInner{
+	position: relative;
+	width: 425px;
+	height: 40px;
+	top: 5px;
+	left: 12.5px;
+	float: left;
+}
+
+.disLogo{
+	position: relative;
+	width: 20%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	float: left;
+}
+
+.disPara{
+	position: relative;
+	width: 80%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	float: left;
+	text-align: left;
+	font-size: 8px;
+	color: #fff;
+}
+
+#CSFlink, #RWlink{
+	background-color: #fff;
+	text-decoration: none;
+	color: #05004d;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+#CSFlink:hover, #RWlink:hover{
+	background-color: #05004d;
+	text-decoration: none;
+	color: #fff;
+	border-radius: 10px;
+	cursor: pointer;
+}
+/* tbh banner end */
+
+/* eGotU banner start */
+.mobMRECeGot{
+	position: absolute;
+	width: 450px;
+	height: 450px;
+	align-content: center;
+	margin: 50px 0 0 50px;
+	background-color: #05004d;
+	box-shadow: 1px 1px 10px 0 rgba(0, 0, 77, 0.9);
+}
+
+.MRECheadeGot, .MRECseceGot{
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: auto;
+	float: left;
+	background-color: transparent;
+	z-index: 5;
+	pointer-events: none;
+  overflow: visible;
+}
+
+.gotStartup{
+	position: relative;
+	width: 100%;
+	height: 70px;
+	top: 0;
+	left: 0;
+	float: left;
+	background-color: transparent;
+	z-index: 1;
+}
+
+.MRECin1eGot, .MRECin2eGot, .MRECin3eGot{
+	position: relative;
+	height: 265px;
+	top: 0;
+	left: 0;
+	float: left;
+	background-color: transparent;
+}
+
+.MRECin1eGot{
+	width: 30%;
+}
+
+.MRECin2eGot{
+	width: 40%;
+}
+
+.MRECin3eGot{
+	width: 30%;
+}
+
+/* globe gif containers start */
+/* GlobeCon is lightglobe and Earth gif container */
+.GlobeCon{
+	position: absolute;
+	width: 100%;
+	height: 225px;
+	top: -220px;
+	left: 0;
+	float: left;
+}
+
+/* globeGifCon Earth gif container */
+.globeGifCon{
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	float: left;
+}
+
+/* GlobeOver is blur over Earth overlay - Earth's atmosphere rep */
+.GlobeOver{
+	position: absolute;
+	width: 65px;
+	height: 65px;
+	margin: 28px 0 0 50px;
+	float: left;
+	border: 7px solid #34FBFF;
+	border-radius: 50%;
+	opacity: .88;
+	filter: blur(3px);
+  	-webkit-filter: blur(3px);
+}
+/* globe gif containers end */
+
+/* switch containers start */
+.eGotSwitch{
+	position: relative;
+	width: 25%;
+	height: 75px;
+	margin-bottom: 0 !important;
+	left: 0;
+	float: left;
+	background-color: transparent;
+	z-index: 4;
+}
+
+/* off switch container */
+#switchBtn{
+	position: absolute;
+	margin: -21px 0 0 54px;
+	height: 100%;
+	width: 100%;
+	background-color: transparent;
+}
+
+/* this is the div container that opens from switchBtn */
+#switchD{
+	position: absolute;
+	width: 182px;
+	height: 225px;
+	overflow: hidden;
+	margin: -2px 0 0 -180px;
+	overflow: visible !important;
+	float: left;
+}
+
+/* lightOff is the unlit globe svg div container */
+.lightOff{
+	position: relative;
+	width: 100%;
+	height: 260px;
+	margin: -220px 0 0 0;
+	float: left;	
+	background-color: transparent;
+}
+
+/* this is blur glow overlay 2 - blue blurred 'lamp' circle that opens on lightswitch click */
+.GlobeOver2{
+	position: absolute;
+	width: 400px;
+	height: 400px;
+	margin: -240px 0 0 -110px;
+	border-radius: 50%;
+	opacity: .3;
+	filter: blur(8px);
+  	-webkit-filter: blur(8px);
+	background-color: #6364ff;	
+	z-index: 1;
+	pointer-events: none;
+}
+
+/* contains 'on switch' svg */
+.ONbtn{
+	position: absolute;
+	margin: -218px 0 0 237px;
+	width: 45px;
+	height: 45px;
+    background: #F2FF00;
+	border-radius: 10%;
+	background-color: transparent;	
+	pointer-events: none;
+}
+/* switch containers end */
+
+.industryCon{
+	width: 450px;
+	height: 450px;
+	margin: -242px 0 0 -136px;
+	position: absolute;
+	float: left;
+	pointer-events: none;
+}
+
+/* Reg button containers start */
+.MRECRegConeGot{
+	position: relative;
+	width: 100%;
+	justify-content: center;
+	display: flex;
+	height: 45px;
+	top: 81%;
+	left: 0;
+	float: left;
+	background-color: transparent;
+	z-index: 6;
+}
+
+.regBtneGot, .regBtnTBH{
+	position: relative;
+	width: 90%;
+	height: 40px;
+	border-radius: 25px;
+	text-align: center;
+	background: #6364ff;
+	font-weight: 600;
+	letter-spacing: 4px;
+	border: 3px #6364ff solid;
+}
+
+.regBtneGot:hover{
+	background: #05004d;
+	border: 3px #fff solid;
+}
+
+.regBtnTBH:hover{
+	background: #ff5a6c !important;
+	border: 3px #ff5a6c solid;
+}
+
+.regBtnTBH:hover a{
+	background: #ff5a6c !important;
+}
+/* Reg button containers end */
+
+.eGotYou{
+	position: relative;
+	width: 100%;
+	height: 70px;
+	left: 0;
+	float: left;
+	background-color: transparent;
+}
+
+.MRECeGotfootCon{
+	position: relative;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 35px;
+	float: left;
+	background-color: transparent;
+}
+
+.disCon{
+	position: relative;
+	width: 450px;
+	height: 50px;
+	bottom: 5px;
+	left: 0;
+	float: left;
+}
+
+.disInner{
+	position: relative;
+	width: 425px;
+	height: 40px;
+	top: 5px;
+	left: 12.5px;
+	float: left;
+}
+
+.disLogo{
+	position: relative;
+	width: 20%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	float: left;
+}
+
+.disPara{
+	position: relative;
+	width: 80%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	float: left;
+	text-align: left;
+	font-size: 8px;
+	color: #fff;
+}
+
+/* eGotU banner end */
+
+/* Banner container - contains hero image SVG */
+.bannerCon{
+  	position: relative;
+  	margin: 5vh 0 0 0;
+  	width: 100%;
+  	display: flex;
+  	justify-content: center; 
+  	height: auto;
+  	float: left;
+  	align-content: center;
+}
+/* aside end */
+
+/* footer style start */
+.navFooter{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 5vh;
+	background: #D8E5EE;
+	z-index: 60000;
+	-webkit-box-shadow: 8px 0 0 0 rgba(5,0,77,0.37);
+	-moz-box-shadow: 8px 0 0 0 rgba(5,0,77,0.37);
+	box-shadow: 8px 0 0 0 rgba(5,0,77,0.37);
+	box-shadow: 0 0 2em rgba(5, 0, 31, 0.15);
+	-webkit-box-shadow: 0 0 2em rgba(5, 0, 31, 0.15);
+	-moz-box-shadow: 0 0 2em rgba(5, 0, 31, 0.15);
+}
+/* footer style end */
+
+/* disclaimer link style start */
+#CSFlink, #RWlink{
+	background-color: #fff;
+	text-decoration: none;
+	color: #05004d;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+#CSFlink:hover, #RWlink:hover{
+	background: #05004d;
+	color: #fff;
+}
+
+#CSFlink2, #RWlink2{
+	background: #fff;
+	text-decoration: none;
+	color: #05004d;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+#CSFlink2:hover, #RWlink2:hover{
+	background: #05004d;
+	color: #fff;
+}
+
+#CSFlinkFounder{
+	background: #ab478b;
+	text-decoration: none;
+	color: #fff;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+#CSFlinkFounder:hover{
+	background: #fff;
+	color: #ab478b;
+}
+/* disclaimer link style end */
+
+@media screen and (max-width: 2300px){
+
+.days, .hours, .minutes, .seconds{
+	font-size: 7px;
+}
+}
+
+@media screen and (max-width: 2150px){
+
+.spaceDivMQ{
+	display: flex;
+	top: 0;
+	left: 0;
+	margin: 0;
+	width: 100%;
+	height: 80px;
+}
+
+.spaceDiv{
+	display: none !important;
+}
+}
+
+@media screen and (max-width: 1920px){
+
+.navHeader{
+	height: 6vh;
+}
+		
+.headBtnInner{
+	margin: 8px 0 0 14.7% !important;
+	top: 0;
+	left: 0;
+}	
+
+.paraConCounters{
+	margin: 0 0 2% 0;
+}
+
+.counterThird1, .counterThird2, .counterThird3{
+	height: 100%;
+}
+
+.timCon{
+	margin-top: 0 !important;
+	top: 0 !important;
+	padding-top: 0 !important;
+}
+
+.timCon::before, .timCon::after{
+	content: "";
+	position: absolute;
+	background: #f0f6fb;
+}
+
+.timCon::before{
+	top: 18.5%;
+	left: 1%;
+	border-radius: 100% 10% 60% 5%/ 20% 10% 30% 99%;
+	width: 10px;
+	height: 10px;
+}
+
+.timCon::after{
+	top: 8.5%;
+	left: 13px;
+	border-radius: 50% 40% 60% 5% / 20% 10% 90% 90%;
+	width: 3px;
+	height: 5%;
+	opacity: .3;
+}
+
+#dealHeadline{
+	font-size: 9.5px;
+	margin: 2px 0 3.8px 0;
+	padding-top: 5px;
+}
+
+.days, .hours, .minutes, .seconds{
+	font-size: 6px;
+}
+
+.logoFoot{
+    width: 100%;
+    margin: .01% 0 0 1% !important;
+    left: 0;
+}	
+
+/* qual slider start */	
+.qualSlider{
+	width: 317px;
+	height: 155px;
+}
+
+.qualSlide{
+	top: 0;
+}
+	
+.qualConCard{
+	top: 4px;
+	left: 34.5px;
+	width: 250px;
+	height: 155px;
+}
+/* qual slider end */
+
+.qualSliderequitise{
+    width: 100%;
+}
+.qualSlideequitise{
+	left: 25px;/* change left position to keep it centered across mobile */
+}
+}
+
+@media screen and (max-width: 1693px){
+
+#dealHeadline{
+	font-size: 9px;		
+}
+}
+
+@media screen and (max-width: 1623px){
+  
+.emoji span{
+	font-size: 2.3em;
+}  
+}
+
+@media screen and (max-width: 1595px){
+
+#dealHeadline{
+	font-size: 8px;		
+}
+
+.days, .hours, .minutes, .seconds{
+	font-size: 5.5px;
+}
+}
+
+@media screen and (max-width: 1440px){
+
+.navHeader{
+	height: 20px;
+}	
+		
+.headBtnInner, .headBtn{
+	margin: 0 !important;
+	top: 0;
+	height: 16px;
+	line-height: .5em;
+}
+		
+.headBtnInner{
+	top: 0 !important;
+	margin-top: 0 !important;
+	width: 75%;
+}	
+
+.SydSec{
+	display: none;
+}
+
+#dealHeadline{
+	margin: 0 0 2px 0;
+	font-size: 12px !important;		
+}
+
+.days, .hours, .minutes, .seconds{
+	font-size: 6.5px !important;
+}
+
+.bannerCon{
+	margin: 2vh 0 0 0;
+}
+
+.scrSpaceCol1, .scrSpaceCol3{
+    display: none;
+}
+    
+.scrSpaceCol2{
+    top: 25px;
+    width: 100%;
+}
+
+.logoFoot{
+    margin: .3% 0 0 0 !important;
+    height: 36px;
+}
+
+.qualConHLbottom, .cvConHLbottom{
+	visibility: hidden;
+}
+
+/* qual slider start */
+.cvCon{
+	top: 0;
+	left: 0;
+	position: relative;
+	width: 100%;
+	height: 100%;
+}	
+	
+.qualSlider{
+	width: 295px;
+	height: 116px;
+}	
+		
+.qualSlide{
+	top: 3px;
+}
+	
+.qualConCard{
+	top: 2px;
+	left: 57.5px;
+	width: 180px;
+	height: auto;
+}
+/* qual slider end */
+
+.qualSliderequitise{
+    width: 40%;
+}
+
+.qualSlideequitise{
+	left: 5px;/* change left position to keep it centered across mobile */
+}
+}
+
+@media screen and (max-width: 1366px){
+
+.NavThird1, .NavThird3{
+	display: none;
+}	
+
+.NavThird2{
+	width: 100%;
+	left: 0 !important;
+	margin-left: 0 !important;
+}
+
+.headBtnInner{
+	width: auto;
+	left: 0 !important;
+	margin: auto;
+}
+
+.headBtnInner h4{
+	font-size: 10px;
+	padding: auto !important;
+	line-height: auto;
+}
+
+.navFooter{
+	display: none;
+}
+
+.spaceDivMQ{
+	height: 20px;
+}
+
+.spaceDiv{
+	display: none;
+}
+
+.qualSliderequitise{
+    width: 45%;
+}
+
+.qualSlideequitise{
+	left: 24px;/* change left position to keep it centered across mobile */
+}
+
+}	
+
+@media screen and (max-width: 1080px){
+
+.headBtnInner{
+	font-size: 10px;
+}
+
+#contentEmail{
+	height: 6630px;
+}
+
+.qualSliderequitise{
+    width: 55%;
+}
+
+.qualSlideequitise{
+	left: 10px;/* change left position to keep it centered across mobile */
+}
+}
+
+@media  screen and (max-width: 980px){
+
+h4{
+    font-size: 2.5em;
+    font-weight: 700;
+}
+    
+p{
+    font-size: 2em;
+}
+}
+
+@media  screen and (max-width: 574px){
+
+.bannerCon{
+	margin-top: 2%;
+}
+
+#dealHeadline{
+	margin: 2px 0 6px 0;
+	padding-top: 5px;
+	font-size: 8px !important;
+}
+
+.days, .hours, .minutes, .seconds{
+	font-size: 5px !important;
+}
+
+.timCon::before{
+	top: 17.5%;
+	left: 5px !important;
+	width: 7px;
+	height: 5px;
+}
+
+.timCon::after{
+	top: 17.5%;
+	left: 5px;
+	width: 3px;
+	height: 50%;
+}
+
+h4, p{
+	font-size: medium;
+}
+
+#contentEmail{
+	height: 7500px;
+}
+
+.qualSliderequitise{
+    width: 100%;
+}
+
+.qualSlideequitise{
+	left: 0;/* change left position to keep it centered across mobile */
+}
+}
